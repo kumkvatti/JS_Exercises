@@ -1,0 +1,43 @@
+var people = [
+{
+    firstname: 'John',
+    lastname: 'Doe',
+    age: 50,
+    eyeColor: 'blue',
+    address: 'Street 12 901290 City',
+    phone: '123435',
+    printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+},
+{
+    firstname: 'Robert',
+    lastname: 'Smith',
+    age: 22,
+    eyeColor: 'brown',
+    address: 'Street 12 901290 City',
+    phone: '123435',
+    printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+},
+{
+    firstname: 'Mauno',
+    lastname: 'Makkarapää',
+    age: 2,
+    eyeColor: 'brown',
+    address: 'Kaupunki',
+    phone: '123',
+    printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+},
+{
+    firstname: 'Signe',
+    lastname: 'Siigurtti',
+    age: 2,
+    eyeColor: 'brown',
+    address: 'Vantaa City',
+    phone: '135',
+    printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+},
+]
+var text="<hr/><h2>6. Objects</h2>";
+for(i=0; i<people.length; i++) {
+text += people[i].printInfo();
+}
+document.write(text);
