@@ -1,0 +1,18 @@
+var x = 16;
+var testi = 'variable';
+if (x>50) {
+document.write("<h1>tämän pitäisi näkyä otsikkona</h1>");
+console.log("tämän pitäisi näkyä otsikkona");
+}
+else if (x >= 30 && x <= 50) {
+document.write("<p>tämän pitäisi olla ihan tavallista tekstiä " + testi + "</p>")
+console.log("tämän pitäisi olla ihan tavallista tekstiä " + testi);
+}
+else if (x <= 29 && x >= 18) {
+document.write("tämän pitäisi olla ihan tavallista tekstiä " + testi + ", <strong>ja tämän lihavoitua </strong>");
+console.log("tavallista " + testi + ", ja lihavoitua");
+}
+else {
+document.write("ja täällä taas aivan tavallista tekstiä");
+console.log("ja täällä taas aivan tavallista tekstiä");
+}
